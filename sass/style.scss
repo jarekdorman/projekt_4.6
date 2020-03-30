@@ -24,10 +24,16 @@ $logofont: 'Pacifico', cursive;
 .section-title {
     font-family: $mainfont;
     font-size: 40px;
+    margin: 100px 0 20px 0;
+    text-transform: uppercase;
 }
 
 .section-description {
-    
+    font-size: 16px;
+    font-family: $articlefont;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 80px;
 }
 
 // HEADER 
@@ -98,9 +104,33 @@ $logofont: 'Pacifico', cursive;
 
 .services-cards {
     display: flex;
-
+    padding: 0 150px;
+    justify-content: space-around;
 }
 
 .services-cards i {
     color: $maincolor;
+    border: 3px solid $maincolor;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-family: $mainfont;
+    margin-top: 30px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #777;
+    font-family: $articlefont;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 300px;
 }
