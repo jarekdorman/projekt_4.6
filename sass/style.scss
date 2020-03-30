@@ -1,0 +1,106 @@
+$maincolor: #fed136;
+
+$mainfont: 'Montserrat', sans-serif;
+$articlefont: 'Roboto Slab', serif;
+$logofont: 'Pacifico', cursive;
+
+// GLOBAL
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-main {
+    background: $maincolor;
+    color: #fff;
+    padding: 20px 60px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    font-family: $mainfont;
+    font-size: 40px;
+}
+
+.section-description {
+    
+}
+
+// HEADER 
+
+.main {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(/images/BackgroundImage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 800px;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.right-nav ul li {
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 60px;
+}
+
+.right-nav ul li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $mainfont;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.left-nav {
+    font-family: $logofont;
+    font-size: 26px;
+    margin-top: 30px;
+    color:$maincolor;
+}
+
+.splash {
+    margin-top: 200px;
+    font-family: $mainfont;
+    text-align: center;
+}
+
+.splash h1 {
+    font-size: 75px;
+    margin-top: 50px;
+}
+
+.splash h2 {
+    font-size: 40px;
+
+}
+
+.splash button {
+    margin-top: 50px;
+}
+
+// SERVICES 
+
+.services {
+    text-align: center;
+}
+
+.services-cards {
+    display: flex;
+
+}
+
+.services-cards i {
+    color: $maincolor;
+}
