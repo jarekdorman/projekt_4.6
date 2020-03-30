@@ -12,6 +12,13 @@
   border: none;
   border-radius: 5px;
   letter-spacing: 2px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.btn-main:hover {
+  background: #fff;
+  color: #fed136;
 }
 
 .section-title {
@@ -59,6 +66,12 @@
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  transition: all 1s;
+}
+
+.right-nav ul li a:hover {
+  color: #fed136;
+  border-bottom: 1px solid #fff;
 }
 
 .left-nav {
@@ -126,6 +139,14 @@
   width: 300px;
 }
 
+.card {
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: rotate(360deg);
+}
+
 .portfolio {
   text-align: center;
   background: #f7f7f7;
@@ -152,6 +173,12 @@
 
 .port-card img {
   width: 100%;
+  transition: all 1s;
+}
+
+.port-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 10px 5px #888888;
 }
 
 .card-title {
@@ -176,16 +203,123 @@
   background: #000;
   color: #fff;
   border-radius: 50%;
-  padding: 20px 0 0 30px;
+  padding: 25px 0 0 30px;
   font-size: 20px;
   margin-left: 15px;
   width: 50px;
   height: 50px;
+  transition: all 0.5s;
+}
+
+.social i:hover {
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
 }
 
 .copy {
   font-family: "Montserrat", sans-serif;
   color: #777;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+  .main {
+    height: 100vh;
+  }
+  .splash {
+    margin-top: 90px;
+  }
+  .splash h1 {
+    font-size: 55px;
+  }
+  .splash h2 {
+    font-size: 30px;
+  }
+  .services-cards {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .card {
+    width: 100vw;
+  }
+  .port-card {
+    width: 100vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .portfolio-cards {
+    padding: 0;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .footer {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0;
+  }
+  .copy {
+    width: 100vw;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .social {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .social i {
+    padding: 20px 10px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services-cards {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    padding: 0;
+  }
+  .card {
+    width: 100vw;
+  }
+  .splash h1 {
+    font-size: 50px;
+  }
+  .footer {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0;
+  }
+  .copy {
+    width: 100vw;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .social {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .social i {
+    padding: 20px 10px 0 10px;
+  }
+  .port-card {
+    width: 100vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .portfolio-cards {
+    padding: 0;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
